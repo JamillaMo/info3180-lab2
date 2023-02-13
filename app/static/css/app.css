@@ -1,3 +1,15 @@
 body {
     padding-top: 5rem;
 }
+
+.main {
+    background-color: blueviolet;
+    width: 100vw;
+    padding: 30px;
+    margin: 0;
+}
+
+img.profileimg {
+    border-radius: 50%;
+    width: 100px;
+}

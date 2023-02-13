@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block main %}
+<header>
+    <div class="main">
+        <img class="profileimg" rel="stylesheet" src="{{ url_for('static', filename='Profile.png') }}" />
+        <p>Jamilla Morgan</p>
+        <p>@JamillaMo</p>
+        <p>Kingston, Jamaica</p>
+    </div>
+    <section class="paragraph">
+        <p>I like words. Sometimes.</p>
+        <div class="infoColumns">
+            <div id="box1" class="flex-item">Posts</div>
+            <div id="box2" class="flex-item">Following</div>
+            <div id="box3" class="flex-item">Followers</div>
+        </div>
+        <button>Follow</button>
+    </section>
+</header>
+{% endblock %}
