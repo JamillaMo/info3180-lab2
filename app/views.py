@@ -51,6 +51,8 @@ def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
 
+@app.route("/profile/")
+@app.route("/<date>")
 def format_date_joined(date):
     now = datetime.datetime.now()
     date_joined = datetime.date(now)
