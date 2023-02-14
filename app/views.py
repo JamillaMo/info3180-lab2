@@ -53,5 +53,6 @@ def page_not_found(error):
 
 def format_date_joined(date):
     now = datetime.datetime.now()
-    date_joined = datetime.date(date)
-    print("Joined " + date_joined.strftime("%B, %Y"))
+    date_joined = datetime.date(now)
+    nowDate = "Joined " + date_joined.strftime("%B, %Y")
+    return render_template('profile.html', date = nowDate)
